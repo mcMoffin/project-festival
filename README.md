@@ -4,6 +4,6 @@ Some Description!
 
 Hello world.
 
-## subheader
+## sub-header
 
 testing a change
