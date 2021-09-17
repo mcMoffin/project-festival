@@ -1,0 +1,99 @@
+@import "./variables";
+
+@mixin flexables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin buttons {
+  @include anchorButtons;
+  background-color: $bodyBgc;
+  border: $borderStyle !important;
+}
+
+@mixin anchorButtons {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  margin-top: 5rem;
+  border: $borderStyle;
+  color: $textColor;
+}
+
+@mixin navHeader($direction) {
+  position: relative;
+  z-index: 999;
+  min-height: 10vh;
+  width: 100%;
+  padding: 0 5rem 0 5rem;
+  margin: auto;
+
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-links {
+    width: 100%;
+  }
+  .nav-options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav-options h3 {
+    margin-right: 2rem;
+  }
+  .nav-options a {
+    text-decoration: none;
+    color: $textColor;
+    font-size: 1.5rem;
+  }
+}
+
+@mixin innerImg($width, $height) {
+  width: $width;
+  height: $height;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+@mixin explore {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  margin-top: 5rem;
+  border: $borderStyle;
+  color: $textColor;
+}
+
+@mixin description {
+  flex: 1;
+  padding: 10px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCenterRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin imgReveal {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  background-color: #17181a;
+
+  transition: all 0.5s ease-out;
+}

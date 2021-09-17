@@ -1,0 +1,86 @@
+// imports
+@import "./variables";
+@import "./mixin";
+
+/* throwback pg*/
+.detail-slide {
+  margin: 0 0 5rem 0;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* throwback pg description*/
+.concert-txt {
+  flex: 1;
+  padding: 10px;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+.concert-txt h2 {
+  font-size: $h2Size;
+  margin-bottom: 1.5rem;
+}
+.concert-txt p {
+  line-height: 30px;
+}
+
+.concert1 h2 {
+  color: rgb(128, 51, 172);
+}
+.concert2 h2 {
+  color: rgb(172, 51, 108);
+}
+.concert3 h2 {
+  color: rgb(51, 69, 172);
+}
+
+/* throwback pg images */
+.concert-img {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+.concert-img img {
+  @include innerImg(100%, 80vh);
+}
+
+/* throwback pg dates*/
+.concert-date {
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+  font-size: 7.5rem;
+  opacity: 0.5;
+  text-shadow: 5px 2.5px #000000;
+  overflow: hidden;
+}
+
+/* Web view */
+@media screen and (min-width: 720px) {
+  /* throwback pg*/
+  .detail-slide {
+    display: flex;
+    padding: 2rem;
+  }
+
+  /* throwback pg description*/
+  .concert-txt {
+    font-size: 2.5rem;
+  }
+  .concert-txt h1 {
+    font-size: $h1Size;
+    margin-bottom: 4rem;
+  }
+  .concert-txt p {
+    line-height: 45px;
+  }
+
+  /* throwback pg dates*/
+  .concert-date {
+    top: 70vh;
+    left: 45vw;
+  }
+}

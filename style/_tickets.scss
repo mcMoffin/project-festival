@@ -1,0 +1,60 @@
+// imports
+@import "./variables";
+@import "./mixin";
+
+/* Purchase pg */
+.purchase {
+  @include flexCenter;
+  flex-direction: column;
+  margin: 5rem 0 5rem 0;
+  p {
+    font-size: $normaltxS;
+  }
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.quantity {
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  font-size: 24px;
+  color: $textColor;
+  padding: 0.5rem;
+}
+input[type="number"] {
+  display: block;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: radio;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+}
+
+.add-cart {
+  @include buttons;
+}
+
+// web view
+@media screen and (min-width: 720px) {
+  .quantity {
+    width: 60px;
+    height: 40px;
+    font-size: 24px;
+  }
+  .add-cart {
+    font-size: 14px;
+    border: none;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+  }
+}
