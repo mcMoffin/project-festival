@@ -1,109 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description"content="Your number 1 spot to get concert tickets!"/>
-        <link rel="icon" href="../icons/dj.png"  alt="Icons made by smalllikeart from https://www.flaticon.com">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-        <title>Speakerhead</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="../style/style.css">
-    </head>
-    <body data-barba="wrapper">
-        
-        <header class="nav-header">
-            <h1><a href="../index.html" id="logo">Speakerhead</a></h1>
 
-            <div class="nav-links">
-                <ul class="nav-options">
-                    <h3><a href="./throwback.html">Throwback</a></h3>
-                    <h3><a href="./schedual.html">Schedual</a></h3>
-                    <h3><a href="./purchase.html">Tickets</a></h3>
-                    <h3>
-                        <a href="./cart.html">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                        <span class="amount">0</span>
-                    </h3>
-                </ul>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Your number 1 spot to get concert tickets!" />
+    <link rel="icon" href="../icons/dj.png" alt="Icons made by smalllikeart from https://www.flaticon.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Speakerhead</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <div class="burger">
-                <div class="bLine1"></div>
-                <div class="bLine2"></div>
-                <div class="bLine3"></div>
-            </div>
-        </header>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
 
-        <main class="cart-contain" data-barba="container" data-barba-namespace="cart">           
-            <section class="basket">
-                <h3 class="cartHeaders">ITME</h3>
-                <h3 class="cartHeaders">QTY</h3>
-                <h3 class="cartHeaders">PRICE</h3>
+<body data-barba="wrapper">
 
-                <ul class="items">
+    <header class="nav-header">
+        <h1><a href="../index.html" id="logo">Speakerhead</a></h1>
 
-                    <div class="item" data-itme="1">
-
-                        <div class="delete">X</div>
-
-                        <div class="item-img">
-                            <img src="../img/ticket.jpg" alt="ticket">
-                        </div>
-                        
-                        <input type="number" name="quantity" class="item-amount" max="20" min="1" value="1">
-                        
-                        <p class="item-price">$ <b>50.00</b></p>
-                    </div>
-                </ul>
-                <p class="total">total: $<b class="total-amount">100.00</b></p>
-                <button class="checkout">CHECKOUT</button>
-            </section>
-        </main>
-
-        <nav class="nav-bar">
-            <div class="contact">
-                <h2>Keep in touch</h2>
-                <p>
-                    Follow us on Twitter, YouTube and Instagram. We have dates, updates on our events and streams and more!<br><br>
-                    Disclaimer: This site was made for a fictional festival. The links do work though.
-                </p>
-            </div>          
-
-            <div class="social-links">
-                <ul>
-                    <h3><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">Twitter</a></h3>
-                    <h3><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">Instagram</a></h3>
-                    <h3><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">Youtube</a></h3>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="swipe swipe1"></div>
-        <div class="swipe swipe2"></div>
-        <div class="swipe swipe3"></div>
-
-        <div class="cursor">
-            <span class="cursor-txt"></span>
+        <div class="nav-links">
+            <ul class="nav-options">
+                <h3><a href="./throwback.html">Throwback</a></h3>
+                <h3><a href="./schedual.html">Schedule</a></h3>
+                <h3><a href="./purchase.html">Tickets</a></h3>
+                <h3>
+                    <a href="./cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <span class="amount">0</span>
+                </h3>
+            </ul>
         </div>
 
-        <footer>
-            Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-        </footer>
+        <div class="burger">
+            <div class="bLine1"></div>
+            <div class="bLine2"></div>
+            <div class="bLine3"></div>
+        </div>
+    </header>
+
+    <main class="cart-contain" data-barba="container" data-barba-namespace="cart">
+        <section class="basket">
+            <h3 class="cartHeaders">ITME</h3>
+            <h3 class="cartHeaders">QTY</h3>
+            <h3 class="cartHeaders">PRICE</h3>
+
+            <ul class="items">
+
+                <div class="item" data-itme="1">
+
+                    <div class="delete">X</div>
+
+                    <div class="item-img">
+                        <img src="../img/ticket.jpg" alt="ticket">
+                    </div>
+
+                    <input type="number" name="quantity" class="item-amount" max="20" min="1" value="1">
+
+                    <p class="item-price">$ <b>50.00</b></p>
+                </div>
+            </ul>
+            <p class="total">total: $<b class="total-amount">100.00</b></p>
+            <button class="checkout">CHECKOUT</button>
+        </section>
+    </main>
+
+    <nav class="nav-bar">
+        <div class="contact">
+            <h2>Keep in touch</h2>
+            <p>
+                Follow us on Twitter, YouTube and Instagram. We have dates, updates on our events and streams and
+                more!<br><br>
+                Disclaimer: This site was made for a fictional festival. The links do work though.
+            </p>
+        </div>
+
+        <div class="social-links">
+            <ul>
+                <h3><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">Twitter</a></h3>
+                <h3><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">Instagram</a></h3>
+                <h3><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">Youtube</a></h3>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
+
+    <div class="cursor">
+        <span class="cursor-txt"></span>
+    </div>
+
+    <footer>
+        Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </footer>
 
 
-        <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha512-HzAEuXwhLxwm/Jj+5ecdjzrRVrjuh2ZeIxyT1Ln37TO5pWNMnKBuU7cfd1wvRQ/k86w1oC174Yk1T7aRlBpIcA==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha512-Ey+nIg+Ue8gUAaCNjR1KHR8nwDjWn9QXoQbynR/X+V66s6u1oqynnuRQ8zSgg5f5gBNb2Bzsu1pItCi3sPkbfA==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha512-A98SmLRZISk4eIxQBeCm8k0jAcwN3A3lBx4hr7baoMpV1VpxcxlZIhi5fJIZN50sQ5RlCzx8yV+Voy2cR6x0aA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
 
-        <script src="../main.js" async defer></script>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+        integrity="sha512-HzAEuXwhLxwm/Jj+5ecdjzrRVrjuh2ZeIxyT1Ln37TO5pWNMnKBuU7cfd1wvRQ/k86w1oC174Yk1T7aRlBpIcA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+        integrity="sha512-Ey+nIg+Ue8gUAaCNjR1KHR8nwDjWn9QXoQbynR/X+V66s6u1oqynnuRQ8zSgg5f5gBNb2Bzsu1pItCi3sPkbfA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+        integrity="sha512-A98SmLRZISk4eIxQBeCm8k0jAcwN3A3lBx4hr7baoMpV1VpxcxlZIhi5fJIZN50sQ5RlCzx8yV+Voy2cR6x0aA=="
+        crossorigin="anonymous"></script>
+
+    <script src="../main.js" async defer></script>
+</body>
+
 </html>
